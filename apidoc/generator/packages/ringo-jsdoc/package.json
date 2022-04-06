@@ -1,0 +1,33 @@
+{
+   "name": "ringo-jsdoc",
+   "version": "0.12.0",
+   "description": "The legacy jsdoc implementation used in Ringo 0.11 and before.",
+   "homepage": "http://ringojs.org",
+   "keywords": [
+      "jsdoc",
+      "legacy"
+   ],
+   "author": "Hannes Wallnhöfer",
+   "contributors": [
+      "Philipp Naderer"
+   ],
+   "bugs": "https://github.com/ringo/legacy-modules/issues",
+   "licenses": [
+      {
+         "type": "Apache 2.0",
+         "url": "https://raw.githubusercontent.com/ringo/legacy-modules/master/LICENSE"
+      }
+   ],
+   "dependencies": {
+      "ringo-markdown": ">=0.11",
+      "ringo-mustache": ">=0.11"
+   },
+   "repositories": [{
+      "type": "git",
+      "url": "https://github.com/ringo/legacy-modules.git"
+   }],
+   "engines": {
+      "ringojs": ">= 0.8"
+   },
+   "main": "lib/jsdoc.js"
+}

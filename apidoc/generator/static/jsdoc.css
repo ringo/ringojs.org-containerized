@@ -1,0 +1,217 @@
+.submenu .jsdoc {
+    font-size: 1rem;
+}
+
+.submenu .jsdoc h1 {
+    font-size: 2.25rem;
+    line-height: 1.25em;
+    margin-top: -4px;
+}
+
+.submenu .jsdoc ul {
+    list-style: circle;
+    margin-top: 1rem;
+}
+
+.submenu .jsdoc li {
+    margin: 3px 0;
+    padding: 0 0 0 1px;
+}
+
+.submenu .jsdoc .toggles a:first-child {
+    margin-right: 15px;
+}
+
+.jsdocSidenav input {
+    display: block;
+    padding: 5px;
+    margin: 18px 0 7px -1px;
+    width: 100%;
+    -moz-background-clip: padding;
+    -ms-background-clip: padding-box;
+    -o-background-clip: padding-box;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    border: 1px solid #cfcfcf;
+    font-family: 'Open Sans',​Arial,​Helvetica,​sans-serif;
+    font-size: 1rem;
+}
+
+.jsdocSidenav input:focus {
+    border-color: #aaa;
+    outline: 0;
+    box-shadow: #b7d2ea 0 0 3px 0;
+}
+
+.jsdocSidenav input.submittable {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAUCAMAAADWUb86AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjMxQjRENjYzMENBNTExRTJCMUEzOENDMzcwMUE5RkVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjMxQjRENjY0MENBNTExRTJCMUEzOENDMzcwMUE5RkVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzFCNEQ2NjEwQ0E1MTFFMkIxQTM4Q0MzNzAxQTlGRUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzFCNEQ2NjIwQ0E1MTFFMkIxQTM4Q0MzNzAxQTlGRUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5R5cI5AAACtVBMVEXz8urr6d3x8Oju7OLt7e3T09P19O3AwMDq6Nyzs7Pp59qmpqbg4OD29e/49/L29fH19O7z8uv29fD4+PabmIrz8u3y8On49/Xv7eSsrKzx7+fp59z39/T5+PTz8uz39vTt6+H08+329O739vCfn5/w7ub18+/Gxsbv7ubBv7PSz8Ps6t/z8u7Bv7fNzc3u7OPJxbj8+/n5+PWSj4GgnZD08+v19O/r6d729fL6+fWYlYf39vH5+ff39/Lz8er4+PeZlons6+D+/v3T0cX8+/v08uv5+fiTkIKXlYf///6cmYv8/PrQzcTTz8Xp59vDwbnKxrmzsafOyr6em4+7uKubmYzl49v8/Py/vbL7+vnq59rEw7j39/aal4n6+vnGwbPY1MrLx7v49/S3tafX1MrU0cbn5d7m5d3l5Ny+u7Ho5tmrqJv18+3OzMTHwrbl493+/fudmo2dmozLycDCwLXw7uf6+fbY1s3FwrjW0snr6eL4+PX29vOsqpz29vTY1szJxrzIxr37+vi8uazPzcefnZD19fHU0MaVkoS+vK7KycDV0cecmYrDwLjU0MfCwbW9uq3a1s7Jx73n5+f6+ffp5+L7+/r08+zMy8T//vzLysHV08f5+fmxraL49/b39fDIw7XEwrr//vvs6+LTz8f///ry8enu7uqfnI749/Pm5N3MyL2em43T0MTJxLbo59+dmovT0MW0sKfz8ezn5t/U0cfx8O/8+/rAvrXq6N3FwrfOzMXPy77FxLzw7+67ubC5ubnp6Nzm5Nzw7+rw7ujMx7u9u7Lo5eCcmY3t7OXGxbrw8OvAvbGioJLHwrTq6eTy8e/z8+uzsaXDwLbQzcHr6uOUkYPx8Om9u6/DwbfBvrPu7eP9/fz5+PfW0sjV08i6uKzRzsLSzsT6+vqRjoCZmZn///8xyxadAAACF0lEQVR42mJ4Fr638Al2YOwevH/bMzBgeOyge8HJ8xk2EJNvkG3VAlGm22vhZMgnJCBnJ8aEAGJ2cgJCfIbH9yRf2wdW5iF/+hmfmaCYqoQ+MwLoS6iKCZrxuQVp1gaClT3ZfviZkKCUhIK2OSMCmGsrSEgJCj07qnnmLERZ05Zn4o+BQGcxBxQclJaW9tupfZtJ8VleZ7QJRNmUtGePnwIBu6gfFxeXo6ioI5DiyopiVFAVfBYf0r8CoswoHaiMB2iaRp3b4zZRdvbHm2sei5dqyNvLCDw790BTBKIsaRVEmRyrpMpTTj2guSyST7lZWCW5OcWfLWgugSrjOwSxlIdVhYXnKQvQNE71x+zqrCqTgaatm3AZqsw6A2KaIiu3MAtI2TxuoCZOVk55KddnBjduekGUzQ+DKBOGKjsAMu2xBSunzLKcZwGZFVDTeK9CLOVm5bYHKuMBu+2pHiunuKvQs8RbpzYsBStTqnpmAwo3G7W7avyP+fkfP+YXBmK1an7elc9W72r0WgRRpuFpdNFUUHE6AwowZePlk71zpaGraCZE2fUyb0tZW2VeAV5lNjCwZmMDsm1lLb2nOs/YvaYAHPVH2E4un4Y1IUWe3zgpdxYkso5FrK9PuZ+6VushGtDScp691af40g6wsjiHuT6V3e2+j9CAb9+9hPKJSzadmANW9szFPxR7Cu+w6oltXegCth8gwAAH+4Je2CRhQgAAAABJRU5ErkJggg==') right 4px no-repeat;
+}
+
+/** Content Style **/
+
+.jsdoc h4 {
+    margin-bottom: 0;
+    font-size: 1.250rem;
+}
+
+.jsdoc h4 + pre {
+    margin-top: 1rem;
+}
+
+.jsdoc .docitem ul {
+    list-style: inherit;
+}
+
+.jsdoc .docitem li {
+    margin-left: 30px;
+    padding-left: 4px;
+}
+
+.jsdoc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.jsdoc ul.propertyoverview {
+    font-family: "Fira Mono",Monaco,Consolas,"Liberation Mono",Courier,monospace;
+}
+
+.jsdoc ul .jsdoc-title {
+    margin-right: 5px;
+}
+
+.jsdoc li.deprecated {
+    text-decoration: line-through;
+}
+
+.jsdoc .parameters {
+    color: #949494;
+}
+
+.jsdoc li .parameters {
+    font-size: 0.75rem;
+}
+
+.jsdoc table {
+    border-spacing: 0;
+}
+
+.jsdoc td {
+    vertical-align: top;
+}
+
+.jsdoc td ul,
+.jsdoc td ol{
+    list-style: inherit;
+    padding-left: 16px;
+}
+
+.jsdoc td p:first-child {
+    margin-top: 0;
+}
+
+.jsdoc td p:last-child {
+    margin-bottom: 0;
+}
+
+.jsdoc td.returnsType,
+.jsdoc td.paramType {
+    color: #949494;
+}
+
+.jsdoc td.paramName,
+.jsdoc td.returnsName {
+    padding: 0 16px;
+}
+
+.jsdoc td.paramName {
+    font-weight: bold;
+}
+
+.jsdoc td.void {
+    display: none;
+}
+
+.jsdoc td.paramType.void + td.paramName,
+.jsdoc td.returnsType.void + td.returnsName {
+    padding-left: 0;
+}
+
+.jsdoc td.paramDesc {
+    padding-bottom: 8px;
+}
+
+.jsdoc .details {
+    position: relative;
+    margin-top: 3.125rem;
+    padding-top: 2rem;
+    border-top: 3px dashed #C0C3C5;
+}
+
+.jsdoc .details:before {
+    content: "Details";
+    position: absolute;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    height: 1rem;
+    text-align: center;
+    padding: 0;
+    top: -0.6rem;
+    left: 5%;
+    width: 10%;
+    color: #C0C3C5;
+    background: #FCFCFC;
+}
+
+.jsdoc .dimmed {
+    color: #333;
+    font-weight: 500;
+}
+
+.jsdoc hr {
+    border: 0px none;
+    color: #999;
+    background-color: #E0E0E0;
+    height: 1px;
+    margin: 36px 0px;
+}
+
+.jsdoc .details hr:first-child {
+    display: none;
+}
+
+.jsdoc.repositoryIndex h2 {
+    font-size: 1.5rem;
+    margin: 2.250rem 0 1rem 0;
+}
+
+.jsdoc.repositoryIndex h3,
+.jsdoc.repositoryIndex h4,
+.jsdoc.repositoryIndex li {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.jsdoc.repositoryIndex ul {
+    margin: 0.5rem 0;
+    padding-left: 0;
+}
+
+.jsdoc.repositoryIndex li .jsdoc-title {
+    font-size: 0.750rem;
+    margin-right: 0;
+}
+
+.jsdoc.repositoryIndex li h3 .itemtitle {
+    margin-right: 3px;
+}
+
+.jsdoc.repositoryIndex ul ul {
+    overflow: hidden;
+    margin: 0 0 1rem 0;
+}
+
+.jsdoc.repositoryIndex ul ul li {
+    float: left;
+    margin-right: 0.750rem;
+}

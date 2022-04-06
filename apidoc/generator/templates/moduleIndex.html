@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block title %}
+Module Index - {{repositoryName}}
+{% endblock %}
+
+{% block content %}
+<div class="jsdoc">
+    <h1>Module Index</h1>
+
+    <ul class="modulelist">
+        {% for module in modules %}
+        <li >
+
+        <h2><a href="{{ module.rootPath }}{{ module.id }}/{{ indexhtml }}">{{ module.name }}</a></h2>
+        <div class="jsdoc-fileoverview">
+            {{ module.fileoverview | markdown }}
+        </div>
+
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends "page.html" %}
+
+{% block title %}
+{{ item.name}} - {{ repositoryName }}
+{% endblock %}
+
+{% block content %}
+<div class="jsdoc">
+<h1 class="modulename">Module {{ item.name}}</h1>
+
+<div class="fileoverview">
+    {{ item.fileoverview | markdown }}
+</div>
+
+{% if item.example %}
+<div class="example">
+    <h4>Example</h4>
+    <pre><code>{{ item.example | safe }}</code></pre>
+</div>
+{% endif %}
+
+{% if item.sees.length > 0 %}
+<div>
+    <h4>See</h4>
+    <div>
+        {{ item.sees | newLineList }}
+    </div>
+</div>
+{% endif %}
+
+
+<div class="classoverview">
+    {% if item.functions.length > 0 %}
+    <h2 class="functions">Functions</h2>
+    <ul class="functions propertyoverview">
+        {% for function in item.functions %}
+        <li class="{% if function.deprecated != null %}deprecated{% endif%}">
+            <a href="#{{ function.name }}" class="jsdoc-title">
+                {{ function.shortName }}
+            </a>
+            <span class="parameters">({{ function.parameters | paramTypeList }})</span>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if item.properties.length > 0 %}
+    <h2>Properties</h2>
+    <ul class="propertyoverview">
+        {% for property in item.properties %}
+        <li>
+            <a href="#{{ property.name }}" class="jsdoc-title">{{ property.shortName }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if item.classes.length > 0 %}
+    {% for class in item.classes %}
+    <div class="classes">
+        <h2>Class <a href="#{{ class.name }}" class="jsdoc-title">{{ class.name }}</a></h2>
+
+        {% if class.methods.length > 0 %}
+        <h3>Instance Methods</h3>
+        <ul class="propertyoverview">
+            {% for method in class.methods %}
+            <li>
+                <a href="#{{ method.name }}" class="jsdoc-title">{{ method.shortName }}</a><span class="parameters">({{ method.parameters | paramTypeList }})</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if class.properties.length > 0 %}
+        <h3>Instance Properties</h3>
+        <ul class="propertyoverview">
+            {% for property in class.properties %}
+            <li>
+                <a href="#{{ property.name }}" class="jsdoc-title">{{ property.shortName }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if class.staticMethods.length > 0 %}
+        <h3>Static Methods</h3>
+        <ul class="propertyoverview">
+            {% for staticMethod in class.staticMethods %}
+            <li>
+                <a href="#{{ staticMethod.name }}" class="jsdoc-title">{{ staticMethod.shortName }}</a><span class="parameters">({{ staticMethod.parameters | paramTypeList }})</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if class.staticProperties.length > 0 %}
+        <h3>Static Properties</h3>
+        <ul class="propertyoverview">
+            {% for staticProperty in class.staticProperties %}
+            <li>
+                <a href="#{{ staticProperty.name }}" class="jsdoc-title">{{ staticProperty.shortName }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    {% endfor %}
+    {% endif %}
+</div>
+
+<div class="details">
+    {% for item in item.items %}
+    <hr />
+    <!-- tpl-docitem -->
+    <div class="docitem" data-docitem="{{name}}">
+        <h3 {% if item.isClass %}class="classtitle"{% endif %}>
+        <span class="itemtitle">
+            {{ item.namePrefix }}
+            <a id="{{ item.name }}" href="#{{ item.name }}" class="itemtitle itemname">
+                {{ item.shortName }}
+            </a>
+        </span>
+        {% if item.isFunction %}<span class="parameters">({{ item.parameters | paramTypeList }})</span>{% endif %}
+        </h3>
+        {% if item.deprecated != null %}
+        <p class="deprecated">
+            <strong>Deprecated!</strong><br>
+            <em>{{ item.deprecated }}</em>
+        </p>
+        {% endif %}
+        <div>
+            {{ item.desc | markdown }}
+        </div>
+        {% if item.example %}
+        <div class="example">
+            <h4>Example</h4>
+            <pre><code>{{ item.example | safe }}</code></pre>
+        </div>
+        {% endif %}
+
+        {% if item.parameters.length > 0 %}
+        <div>
+            <h4>Parameters</h4>
+            <table>
+                {% for parameter in item.parameters %}
+                <tr>
+                    <td class="paramType {% if parameter.type == null %}void{% endif %}">{{ parameter.type }}</td>
+                    <td class="paramName">{{ parameter.name }}</td>
+                    <td class="paramDesc">{{ parameter.desc | markdown }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endif %}
+
+        {% if item.returns %}
+        <div>
+            <h4>Returns</h4>
+            <table>
+                <tr>
+                    <td class="returnsType {% if item.returns.type.length == 0 %}void{% endif %}">
+                        {{ item.returns.type }}
+                    </td>
+                    <td class="returnsName">{{ item.returns.name | markdown }}</td>
+                </tr>
+            </table>
+        </div>
+        {% endif %}
+
+        {% if item.throws.length > 0 %}
+        <div>
+            <h4>Throws</h4>
+            <div class="extrainfo throws">
+                {{ item.throws | join:", " }}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if item.sees.length > 0 %}
+        <div>
+            <h4>See</h4>
+            <div class="extrainfo sees">
+                {{ item.sees | newLineList }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}

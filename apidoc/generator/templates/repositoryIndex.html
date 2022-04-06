@@ -1,0 +1,68 @@
+{% extends "page.html" %}
+
+{% block title %}
+Repository Overview - {{repositoryName}}
+{% endblock %}
+
+{% block content %}
+<div class="jsdoc repositoryIndex">
+<h1>Repository Overview</h1>
+
+{% for module in modules %}
+    <div class="modulecontainer indexall">
+        <h2 class="modulename">Module <a href="{{ module.rootPath }}{{ module.id }}/{{ module.indexhtml }}">{{ module.name }}</a></h2>
+        {% for d in module.data %}
+            <ul class="moduleoverview">
+
+            {% if d.functions.length > 0 or d.properties.length > 0 %}
+            <li>
+                <ul class="propertyoverview">
+                    {% for function in d.functions %}
+                    <li>
+                        <a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ function.name }}" class="jsdoc-title">{{ function.shortName }}</a><span class="parameters">({{ function.parameters | paramTypeList }})</span>
+                    </li>
+                    {% endfor %}
+                    {% for property in d.properties %}
+                    <li>
+                        <a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ property.name }}" class="jsdoc-title">{{ property.shortName }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endif %}
+
+            {% if d.classes.length > 0 %}
+            {% for class in d.classes %}
+            <li><h3>Class {{ class.namePrefix }}<a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ class.name }}" class="itemtitle itemname">{{ class.shortName }}</a><span class="parameters">({{ class.parameters | paramTypeList }})</span></h3>
+
+                <ul class="propertyoverview">
+                    {% for method in class.methods %}
+                    <li>
+                        <a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ method.name }}" class="jsdoc-title">{{ method.shortName }}</a><span class="parameters">({{ method.parameters | paramTypeList  }})</span>
+                    </li>
+                    {% endfor %}
+                    {% for staticMethod in class.staticMethods %}
+                    <li>
+                        <a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ staticMethod.name }}" class="jsdoc-title">{{ staticMethod.shortName }}</a><span class="parameters">({{ staticMethod.parameters | paramTypeList }})</span>
+                    </li>
+                    {% endfor %}
+                    {% for property in class.properties %}
+                    <li>
+                        <a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ property.name }}" class="jsdoc-title">{{ property.shortName }}</a>
+                    </li>
+                    {% endfor %}
+                    {% for staticProperty in staticProperties %}
+                    <li>
+                        <a href="{{ module.rootPath }}{{ module.moduleName }}/{{ module.indexhtml }}#{{ staticProperty.name }}" class="jsdoc-title">{{ staticProperty.shortName }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+            {% endif %}
+            </ul>
+        {% endfor %}
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

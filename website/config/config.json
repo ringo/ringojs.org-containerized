@@ -1,0 +1,28 @@
+{
+  "server": {
+    "vhosts": ["127.0.0.1", "localhost"],
+    "http": {
+      "host": "0.0.0.0",
+      "port": 8080
+    }
+  },
+  "content": "/var/website/content",
+  "templates": "/var/website/templates",
+  "static": [
+    {
+      "path": "/var/website/static",
+      "index": "index.html",
+      "baseURI": "/static",
+      "options": {
+        "servePrecompressed": true,
+        "maxAge": 0,
+        "lastModified": true,
+        "dotfiles": "ignore"
+      }
+    }
+  ],
+  "welcomePage": "index.md",
+  "defaultContext": {
+    "baseURI": "https://ringojs.org"
+  }
+}

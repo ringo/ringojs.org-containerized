@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <div class="jsdoc">
+      {{ content }}
+   </div>
+{% endblock %}
+
+{% block menu %}
+   <div class="jsdoc">
+      <h1>{{ repositoryName }}</h1>
+      <div class="jsdocSidenav">
+         <div class="toggles">
+            <a href="{{rootPath}}index_all.html">&bull; Overview</a>
+            <a href="{{rootPath}}{{ indexhtml }}">&bull; Module Index</a>
+         </div>
+
+         <label for="filter" class="sr-only">Filter modules by name</label>
+         <input id="filter" type="text" autocomplete="off" aria-controls="modulelist" placeholder="Filter modules" />
+
+         <ul id="modulelist">
+            {% if modules.length > 0 %}
+               {% for module in modules %}
+               <li><a href="{{ rootPath }}{{ module.id }}/{{ indexhtml }}">{{ module.name }}</a></li>
+               {% endfor %}
+            {% endif %}
+         </ul>
+      </div>
+   </div>
+{% endblock %}
+
+{% block head %}
+   <link rel="stylesheet" href="{{rootPath}}static/jsdoc.css" />
+   <script type="text/javascript" src="{{rootPath}}static/jsdoc.js"></script>
+{% endblock %}

@@ -1,0 +1,33 @@
+{
+   "name": "ringo-markdown",
+   "version": "0.11",
+   "description": "The legacy markdown parser used in Ringo 0.11 and before.",
+   "homepage": "http://ringojs.org",
+   "keywords": [
+      "markdown",
+      "parser",
+      "legacy"
+   ],
+   "author": "Hannes Wallnhöfer",
+   "contributors": [
+      "Philipp Naderer"
+   ],
+   "bugs": "https://github.com/ringo/legacy-modules/issues",
+   "licenses": [
+      {
+         "type": "Apache 2.0",
+         "url": "https://raw.githubusercontent.com/ringo/legacy-modules/master/LICENSE"
+      }
+   ],
+   "repositories": [{
+      "type": "git",
+      "url": "https://github.com/ringo/legacy-modules.git"
+   }],
+   "engines": {
+      "ringojs": ">= 0.8"
+   },
+   "jars": [
+      "jars/markdown.jar"
+   ],
+   "main": "lib/markdown.js"
+}
