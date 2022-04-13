@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM botic/ringojs:latest
+FROM docker.io/botic/ringojs:latest
 
 VOLUME ["/var/ringojs-modules", "/var/output"]
 

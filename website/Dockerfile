@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:1
-FROM botic/ringojs:latest
+FROM docker.io/botic/ringojs:latest
 
 EXPOSE 8080
 VOLUME /var/website
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get install -y git && \
+RUN apt-get update && apt-get install -y git && \
     mkdir -p /usr/local/ringojs.org/ && \
     cd /usr/local/ringojs.org/ && \
     ringo-admin install --force https://github.com/ringo/simplesite/archive/refs/heads/master.zip
