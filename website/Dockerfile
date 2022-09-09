@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y git && \
     ringo-admin install --force https://github.com/ringo/simplesite/archive/refs/heads/master.zip
 
 WORKDIR /var/website
-CMD ["ringo", "-m", "/usr/local/ringojs.org/packages", "/usr/local/ringojs.org/packages/simplesite/main.js", "--config", "/var/website/config/"]
+CMD ["ringo", "--production", "-Djava.awt.headless=true", "-m", "/usr/local/ringojs.org/packages", "/usr/local/ringojs.org/packages/simplesite/main.js", "--config", "/var/website/config/"]
