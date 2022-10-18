@@ -7,7 +7,7 @@ Compared to a browser environment, the JavaScript we have in Ringo is more moder
 
 When writing Ringo code you should make use of Ringo's standard library; all modules in the standard library are written in Javascript. They are either pure JavaScript or thin wrappers around existing Java libraries. This means you can always dig into the code and look at how we do things without switching languages.
 
-The [API documentation](https://www.ringojs.org/api/master/) has a good overview of all modules available in the standard library with a short explanation of what they do.
+The [API documentation](https://www.ringojs.org/api/main/) has a good overview of all modules available in the standard library with a short explanation of what they do.
 
 Modern JavaScript
 --------------------
@@ -72,7 +72,7 @@ A classic hello world:
 
 <div class="knowmore">
 
-See the API [documentation on globals](https://www.ringojs.org/api/master/globals/) for a complete list of global variables and functions provided by Ringo.
+See the API [documentation on globals](https://www.ringojs.org/api/main/globals/) for a complete list of global variables and functions provided by Ringo.
 
 </div>
 
@@ -97,7 +97,7 @@ If you are unsure what methods a module provides, type until the "." and press T
 
 <div class="knowmore">
 
-If I mention or use a module withouth explaining it much and you feel lost, it is a good idea to look it up in the [API documention](https://ringojs.org/api/master/).
+If I mention or use a module withouth explaining it much and you feel lost, it is a good idea to look it up in the [API documention](https://ringojs.org/api/main/).
 
 </div>
 

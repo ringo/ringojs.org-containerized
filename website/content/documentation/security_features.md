@@ -40,4 +40,4 @@ In a nutshell, using `privileged()` to access a specific (hard-coded) resource t
 
 [policy file]: http://java.sun.com/j2se/1.4.2/docs/guide/security/PolicyFiles.html
 [permissions]: http://java.sun.com/j2se/1.4.2/docs/guide/security/permissions.html
-[example policy file]: https://github.com/ringo/ringojs/blob/master/lib/ringo.policy
+[example policy file]: https://github.com/ringo/ringojs/blob/main/lib/ringo.policy

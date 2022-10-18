@@ -13,5 +13,5 @@ We also publish each release and the latest main snapshot [on Docker Hub under r
 
 ## Current git snapshots
 
- * [RingoJS master tar.gz git snapshot](https://github.com/ringo/ringojs/tarball/master)
- * [RingoJS master zip git snapshot](https://github.com/ringo/ringojs/zipball/master)
+ * [RingoJS main tar.gz git snapshot](https://github.com/ringo/ringojs/tarball/main)
+ * [RingoJS main zip git snapshot](https://github.com/ringo/ringojs/zipball/main)

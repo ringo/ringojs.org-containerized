@@ -1,6 +1,6 @@
 # Install Ringo from Git
 
-Instead of installing a precompiled Ringo release, you can also use the current git master. This requires more
+Instead of installing a precompiled Ringo release, you can also use the current git `main`. This requires more
 tools and knowledge about Java development since you have to build Ringo by yourself.
 
 In addition to Java you will need [Apache Ant](http://ant.apache.org/) and the [Apache Ivy plugin](http://ant.apache.org/ivy/) for Ant.

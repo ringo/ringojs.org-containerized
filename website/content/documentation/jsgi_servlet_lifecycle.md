@@ -39,6 +39,6 @@ If any JavaScript exception thrown by the application code bubbles up to the Jsg
 error message including the JavaScript stack trace. Finally the worker has done all its work and is released again.
 The worker is now ready to serve another incoming request.
 
-[1]: https://github.com/ringo/ringojs/blob/master/src/org/ringojs/jsgi/JsgiServlet.java
-[2]: https://github.com/ringo/ringojs/blob/master/src/org/ringojs/jsgi/JsgiRequest.java
-[3]: https://github.com/ringo/ringojs/blob/master/modules/ringo/jsgi/connector.js
+[1]: https://github.com/ringo/ringojs/blob/main/src/org/ringojs/jsgi/JsgiServlet.java
+[2]: https://github.com/ringo/ringojs/blob/main/src/org/ringojs/jsgi/JsgiRequest.java
+[3]: https://github.com/ringo/ringojs/blob/main/modules/ringo/jsgi/connector.js

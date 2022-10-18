@@ -37,8 +37,8 @@ Github user and repository name:
 
     ringo-admin install [github-user]/[repository]
 
-This will fetch and install the current zipball of the repository's master branch,
-e.g. `https://github.com/[github-user]/[repository]/zipball/master`.
+This will fetch and install the current zipball of the repository's main branch,
+e.g. `https://github.com/[github-user]/[repository]/zipball/main`.
 
 ## rp - Ringo Package Manager (Deprecated)
 

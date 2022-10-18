@@ -18,11 +18,11 @@ Ringo loads the script file and provides the argument via the system module's `a
 
 ### Modules of particular interest for command line applications
 
-  * [system](/api/master/system/) &ndash; provides access to the system environment
-  * [ringo/shell](/api/master/ringo/shell/) &ndash; preloaded module in every Ringo REPL
-  * [ringo/args](/api/master/ringo/args/) &ndash; parser for command line options
-  * [ringo/term](/api/master/ringo/term/) &ndash; ANSI terminal color and style
-  * [ringo/subprocess](/api/master/ringo/subprocess/) &ndash; spawning separate processes
+  * [system](/api/main/system/) &ndash; provides access to the system environment
+  * [ringo/shell](/api/main/ringo/shell/) &ndash; preloaded module in every Ringo REPL
+  * [ringo/args](/api/main/ringo/args/) &ndash; parser for command line options
+  * [ringo/term](/api/main/ringo/term/) &ndash; ANSI terminal color and style
+  * [ringo/subprocess](/api/main/ringo/subprocess/) &ndash; spawning separate processes
 
 ## Detecting invocation as main script
 
