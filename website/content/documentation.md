@@ -13,7 +13,7 @@
 ## References
 
   * Ringo API Reference
-    * [1.2.1](/api/1.2.1/index.html) &ndash; [release notes](release_1_2_1)  &ndash; <em>latest stable release</em>
+    * [4.0.0](/api/4.0.0/index.html) &ndash; [release notes](release_4_0_0)  &ndash; <em>latest stable release</em>
     * [master](/api/master/index.html) &ndash; <em>under development</em>
   * Official Packages
     * [stick](/api/stick/index.html)

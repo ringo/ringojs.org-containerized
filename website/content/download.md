@@ -1,18 +1,15 @@
 # Download Ringo
 
+You can find all stable releases on [Ringo's Github release page](https://github.com/ringo/ringojs/releases).
+We also publish each release and the latest main snapshot [on Docker Hub under ringojs/ringojs](https://hub.docker.com/r/ringojs/ringojs)
+
 ## Latest stable release
 
- * [RingoJS 1.2.1 tar.gz archive](/releases/1.2.1/ringojs-1.2.1.tar.gz)
- * [RingoJS 1.2.1 zip archive](/releases/1.2.1/ringojs-1.2.1.zip)
- * [RingoJS 1.2.1 Debian package](/releases/1.2.1/ringojs_1.2.1_all.deb)
- * [RingoJS 1.2.1 Debian daemon package](/releases/1.2.1/ringojs-daemon_1.2.1_all.deb)
- * [RingoJS 1.2.1 checksums](/releases/1.2.1/SHASUMS256-1.2.1.txt)
- * [RingoJS 1.2.1 signed checksums](/releases/1.2.1/SHASUMS256-1.2.1.txt.asc)
+ * [RingoJS 4.0.0 tar.gz archive](https://github.com/ringo/ringojs/releases/download/v4.0.0/ringojs-4.0.0.tar.gz)
+ * [RingoJS 4.0.0 zip archive](https://github.com/ringo/ringojs/releases/download/v4.0.0/ringojs-4.0.0.zip)
+ * [RingoJS 4.0.0 checksums](https://github.com/ringo/ringojs/releases/download/v4.0.0/SHASUMS256-4.0.0.txt)
+ * [RingoJS 4.0.0 signed checksums](https://github.com/ringo/ringojs/releases/download/v4.0.0/SHASUMS256-4.0.0.txt.asc)
 
-### Source releases
-
- * [RingoJS 1.2.1 tar.gz source archive](https://github.com/ringo/ringojs/archive/v1.2.1.tar.gz)
- * [RingoJS 1.2.1 zip source archive](https://github.com/ringo/ringojs/archive/v1.2.1.zip)
 
 ## Current git snapshots
 
