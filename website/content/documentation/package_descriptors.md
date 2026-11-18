@@ -51,7 +51,6 @@ and easy readability it must match this regular expression: `/^[a-z0-9\._\-]+$/`
 
 * Do not use "js" or "ringo" or "ringojs" in the name.
 * Do not use any parts of existing trademarks.
-* Check the [existing packages](http://packages.ringojs.org/) and avoid similar names.
 
 ### version
 

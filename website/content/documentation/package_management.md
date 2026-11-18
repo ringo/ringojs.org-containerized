@@ -43,5 +43,4 @@ e.g. `https://github.com/[github-user]/[repository]/zipball/main`.
 ## rp - Ringo Package Manager (Deprecated)
 
 An easy way to manage packages and their dependencies has been the Ringo package manager [rp](https://github.com/grob/rp).
-rp can install any package available in its online registry <http://packages.ringojs.org>.
 Look in the [rp wiki on Github](https://github.com/grob/rp/wiki) for a more detailed documentation.

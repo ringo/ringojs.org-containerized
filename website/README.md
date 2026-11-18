@@ -10,7 +10,13 @@ fresh content. Every release artifact should be linked to the corresponding
 
 ## Build and run
 
+The commands below use [Podman](https://podman.io/) as container runtime.
+
 ```
-docker build -t ringojs/website .
-docker run -p 8080:8080 --rm -v $(pwd):/var/website:ro ringojs/website
+podman build -t ringojs/website .
+podman run -p 8080:8080 --rm -v $(pwd):/var/website:ro ringojs/website
 ```
+
+The website is then available at [http://localhost:8080](http://localhost:8080).
+On Linux hosts with SELinux enabled, use `-v $(pwd):/var/website:ro,Z` instead.
+On macOS, make sure the Podman machine is running (`podman machine start`).

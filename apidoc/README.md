@@ -10,11 +10,17 @@ the [ringo/ringojs](https://github.com/ringo/ringojs) repository is cloned into 
 The generated files will be saved to the `output` directory. Make sure that the output directory
 is empty before running the generator.
 
-```
-docker build -t ringojs/apidoc .
+The commands below use [Podman](https://podman.io/) as container runtime.
 
-docker run -it --rm \
+```
+podman build -t ringojs/apidoc .
+
+podman run -it --rm \
     -v ~/Code/ringojs/:/var/ringojs/:ro \
     -v $(pwd)/output/:/var/output/ \
     ringojs/apidoc
 ```
+
+On Linux hosts with SELinux enabled, append `:Z` to the volume options (e.g. `:ro,Z` and `:Z`)
+so the container is allowed to access the mounted directories. On macOS, make sure the
+Podman machine is running (`podman machine start`) and the directories are below your home directory.

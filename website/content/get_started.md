@@ -1,6 +1,9 @@
 # Get Started
 
-This is a short guide on how to install Ringo on your system. The only essential requirement is the Java Platform, Standard Edition. We recommend Java LTS releases 11 or 17 to run Ringo. You can download binary JDK distribution here:
+> **Warning: RingoJS is in maintenance mode.**
+> The project receives bug fixes and security updates, but no major new features or big updates should be expected anymore.
+
+This is a short guide on how to install Ringo on your system. The only essential requirement is the Java Platform, Standard Edition. We recommend Java LTS releases 11, 17, 21 or 25 to run Ringo. You can download binary JDK distribution here:
 
  * [OpenJDK – Adoptium Temurin](https://adoptium.net/) (free; Linux, macOS, Windows)
  * [Oracle JDK](https://www.oracle.com/java/technologies/downloads/) (commonly requires a commercial license)
@@ -11,14 +14,6 @@ This is a short guide on how to install Ringo on your system. The only essential
 
 This is the recommended and straight forward way to install Ringo. Download the latest precompiled release from the
 [download page](/download). For convinience, you should add the `/bin` directory to the `PATH` environment variable.
-
-### Hombrew on Mac OS X
-
-If you use the &#127866;Homebrew package manager, you can use the `ringojs` formula:
-
-```
-brew install ringojs
-```
 
 ## Starting the Ringo shell
 
